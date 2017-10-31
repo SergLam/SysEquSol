@@ -1,0 +1,48 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">10dp</dimen>
+    <dimen name="activity_vertical_margin">10dp</dimen>
+    <!-- General dimen-->
+    <dimen name="acivity_paddind">5dp</dimen>
+    <dimen name="title_txt_size">18sp</dimen>
+
+    <!-- Input fields width-->
+    <dimen name="cell_padding">5dp</dimen>
+    <dimen name="cell_padding2">10dp</dimen>
+
+    <dimen name="cell_padding2_m">-10dp</dimen>
+    <dimen name="cell_margin">5dp</dimen>
+
+    <dimen name="btn_fill_width">300dp</dimen>
+    <dimen name="btn_calc_width">150dp</dimen>
+    <dimen name="btn_text_size">20sp</dimen>
+
+    <!-- Sys 2 dimens-->
+    <dimen name="eq_2_cell_width">85dp</dimen>
+    <dimen name="sys2_input_text_size">22sp</dimen>
+    <dimen name="sys2_txt_size">20sp</dimen>
+
+    <!-- Sys 3 dimens-->
+    <dimen name="eq_3_cell_width">58dp</dimen>
+    <dimen name="sys3_input_text_size">20sp</dimen>
+    <dimen name="sys3_txt_size">18sp</dimen>
+
+    <!-- Sys 4 dimens-->
+    <dimen name="eq_4_cell_width">65dp</dimen>
+    <dimen name="sys4_input_text_size">14sp</dimen>
+    <dimen name="sys4_txt_size">18sp</dimen>
+    <dimen name="sys4_determinant_margin">3dp</dimen>
+
+    <!-- Sys 5 dimens-->
+    <dimen name="eq_5_cell_width">65dp</dimen>
+    <dimen name="sys5_input_text_size">14sp</dimen>
+    <dimen name="sys5_txt_size">18sp</dimen>
+    <dimen name="sys5_determinant_margin">3dp</dimen>
+
+    <!-- Sys 6 dimens-->
+    <dimen name="eq_6_cell_width">65dp</dimen>
+    <dimen name="sys6_input_text_size">14sp</dimen>
+    <dimen name="sys6_txt_size">18sp</dimen>
+    <dimen name="sys6_determinant_margin">3dp</dimen>
+
+</resources>

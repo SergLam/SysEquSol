@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main Activity -->
+    <string name="app_name">" System of equations\n Solver"</string>
+    <string name="main_text">Choose a size of the system:\n(The number of variables in equations)</string>
+    <string name="main_faq_vis">Show the theoretical material\n(The Cramer method)</string>
+    <string name="main_faq_hide">Hide the theoretical material\n(The Cramer method)</string>
+
+    <!-- Theoretical strings -->
+    <string name="theory1">Cramer rule is an explicit formula for the solution of a system of linear equations with as many equations as unknowns, valid whenever the system has a unique solution. It expresses the solution in terms of the determinants of the (square) coefficient matrix and of matrices obtained from it by replacing one column by the vector of right hand sides of the equations.\n\nThe example of solving system of equations:</string>
+    <string name="step1"> Firstly we should calculate a main determinant of the system:</string>
+
+    <string name="src_det_lb">det=</string>
+    <string name="src_det">"  5  4 \n  3  2 "</string>
+    <string name="src_det_solution">"= 5*2 - 3*4 = -2"</string>
+
+    <string name="theory2">If the main determinant equals zero a system has infinitely many solutions or does not have solutions at all. In this case it is necessary to use the Gauss method.\n\nIf the main determinant is not equal to zero – a system has only one solution. To find the roots of the equations, it is necessary to calculate two more determinants:</string>
+
+    <string name="det1_lb">"det1="</string>
+    <string name="det1">"  9  4 \n  7  2 "</string>
+    <string name="det1_sol">="9*2 - 7*4 = -10"</string>
+
+    <string name="det2_lb">"det2="</string>
+    <string name="det2">"  5  9 \n  3  7 "</string>
+    <string name="det2_sol">"=5*7 - 9*3 = 8"</string>
+
+    <string name="theory3">"The roots of the equation can be found from the formulas:"</string>
+
+    <!-- Calculation of result-->
+    <string name="var1">"Y = "</string>
+    <string name="var1_calc_up">det2</string>
+    <string name="var1_calc_down">det</string>
+    <string name="equal">" = "</string>
+    <string name="var1_calc_up_val">8</string>
+    <string name="var1_calc_down_val">-2</string>
+    <string name="var1_val">" = -4"</string>
+
+    <string name="var2">"X = "</string>
+    <string name="var2_calc_up">det1</string>
+    <string name="var2_calc_down">det</string>
+    <string name="var2_calc_up_val">-10</string>
+    <string name="var2_calc_down_val">-2</string>
+    <string name="var2_val">" = 5"</string>
+
+    <string name="theory_end">Systems of equations with a large number of variables are solved by the same principle</string>
+
+    <!-- Main Activity end-->
+
+    <!-- Solution_x2_Activity -->
+
+    <string name="X1_plus">X<sub><small>1</small></sub>+</string>
+    <string name="X2_equal">X<sub><small>2</small></sub>=</string>
+
+    <string name="X1_equal">X<sub><small>1</small></sub>=</string>
+
+    <string name="sys2_det1_lb_up">det<sub><small>1</small></sub></string>
+    <string name="sys2_det2_lb_up">det<sub><small>2</small></sub></string>
+
+    <string name="det_equal">det=</string>
+    <string name="det1_equal">det<sub><small>1</small></sub>=</string>
+    <string name="det2_equal">det<sub><small>2</small></sub>=</string>
+
+    <!-- Solution_x2_Activity end -->
+
+    <!-- Solution_x3_Activity -->
+    <string name="X2_plus">X<sub><small>2</small></sub>+</string>
+    <string name="X3_equal">X<sub><small>3</small></sub>=</string>
+    <string name="det3_equal">det<sub><small>3</small></sub>=</string>
+    <string name="sys3_det1_lb_up">det<sub><small>1</small></sub></string>
+    <string name="sys3_det2_lb_up">det<sub><small>2</small></sub></string>
+    <string name="sys3_det3_lb_up">det<sub><small>3</small></sub></string>
+    <!-- Solution_x3_Activity end-->
+
+    <!-- Solution_x4_Activity -->
+    <string name="X3_plus">X<sub><small>3</small></sub>+</string>
+    <string name="X4_equal">X<sub><small>4</small></sub>=</string>
+    <string name="det4_equal">det<sub><small>4</small></sub>=</string>
+    <string name="sys4_det1_lb_up">det<sub><small>1</small></sub></string>
+    <string name="sys4_det2_lb_up">det<sub><small>2</small></sub></string>
+    <string name="sys4_det3_lb_up">det<sub><small>3</small></sub></string>
+    <string name="sys4_det4_lb_up">det<sub><small>4</small></sub></string>
+    <!-- Solution_x4_Activity end-->
+
+    <!-- Solution_x5_Activity -->
+    <string name="X4_plus">X<sub><small>4</small></sub>+</string>
+    <string name="X5_equal">X<sub><small>5</small></sub>=</string>
+    <string name="det5_equal">det<sub><small>5</small></sub>=</string>
+    <string name="sys5_det1_lb_up">det<sub><small>1</small></sub></string>
+    <string name="sys5_det2_lb_up">det<sub><small>2</small></sub></string>
+    <string name="sys5_det3_lb_up">det<sub><small>3</small></sub></string>
+    <string name="sys5_det4_lb_up">det<sub><small>4</small></sub></string>
+    <string name="sys5_det5_lb_up">det<sub><small>5</small></sub></string>
+    <!-- Solution_x5_Activity end-->
+
+    <!-- Solution_x6_Activity -->
+    <string name="X5_plus">X<sub><small>5</small></sub>+</string>
+    <string name="X6_equal">X<sub><small>6</small></sub>=</string>
+    <string name="det6_equal">det<sub><small>6</small></sub>=</string>
+    <string name="sys6_det1_lb_up">det<sub><small>1</small></sub></string>
+    <string name="sys6_det2_lb_up">det<sub><small>2</small></sub></string>
+    <string name="sys6_det3_lb_up">det<sub><small>3</small></sub></string>
+    <string name="sys6_det4_lb_up">det<sub><small>4</small></sub></string>
+    <string name="sys6_det5_lb_up">det<sub><small>5</small></sub></string>
+    <string name="sys6_det6_lb_up">det<sub><small>6</small></sub></string>
+    <!-- Solution_x6_Activity end-->
+
+
+    <!-- General phrases -->
+    <string name="title_text">Enter variables values:</string>
+    <string name="btn_fill">Fill the fields with random values</string>
+    <string name="btn_calc">Solve the system</string>
+    <string name="solution_title">Solution:</string>
+    <string name="det_lb">det</string>
+    <string name="scope_sign">{</string>
+    <string name="semicolon">;</string>
+    <string name="equal_sign">=</string>
+    <string name="not_have_solution">The system has infinitely many solutions or is inconsistent (has no solutions). When the Cramer rule does not help, we need to use the Gauss method.</string>
+    <string name="error_empty">Enter data</string>
+    <string name="error_invalid">Invalid data</string>
+
+    <!-- AdMob ad unit IDs -->
+    <string name="sys_eq_ad"> ca-app-pub-8202213558316777/6890114449</string>
+    <string name="sys_eq_full_screen">ca-app-pub-8202213558316777/9843580849</string>
+    <!-- AdMob test unit IDs-->
+    <string name="sys_eq_ad_test">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="sys_eq_full_screen_test">ca-app-pub-3940256099942544/1033173712</string>
+
+</resources>

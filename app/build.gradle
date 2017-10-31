@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+    defaultConfig {
+        applicationId "com.samurai.sysequsol"
+        minSdkVersion 17
+        targetSdkVersion 25
+        versionCode 10
+        versionName "4.6"
+        setProperty("archivesBaseName", "Sys_Equ_Solver")
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "3g"
+    }
+}
+
+dependencies {
+    compile group: 'gov.nist.math', name: 'jama', version: '1.0.2'
+
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    testCompile 'junit:junit:4.12'
+    // butter knife
+    compile 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    // google ads
+    compile 'com.google.firebase:firebase-ads:11.0.2'
+    compile 'com.google.android.gms:play-services-ads:11.0.2'
+    // add multidex
+    //compile 'com.android.support:multidex:1.0.1'
+}
+apply plugin: 'com.google.gms.google-services'

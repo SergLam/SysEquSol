@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main Activity -->
+    <string name="app_name">" Решение систем\n уравнений"</string>
+    <string name="main_text">Выберите размер системы:\n(Кол-во переменных в уравнениях)</string>
+    <string name="main_faq_vis">Показать теоретический материал\n(метод Крамера)</string>
+    <string name="main_faq_hide">Скрыть теоретический материал\n(метод Крамера)</string>
+
+    <!-- Theoretical strings -->
+    <string name="theory1">Правило Крамера представляет собой явную формулу для решения системы линейных уравнений с таким же числом уравнений, как и для неизвестных, справедливым всякий раз, когда система имеет единственное решение. Оно выражает решение в терминах определителей (квадратной) матрицы коэффициентов и матриц, полученных из нее, заменяя один столбец на вектор правых частей уравнений.\n\nПример решения системы уравнений:</string>
+    <string name="step1"> Сначала необходимо вычислить главный определитель системы:</string>
+
+    <string name="src_det_lb">det=</string>
+    <string name="src_det">"  5  4 \n  3  2 "</string>
+    <string name="src_det_solution">"= 5*2 - 3*4 = -2"</string>
+
+    <string name="theory2">Если главный определитель, равен нулю, то система имеет бесконечно много решений или вообще не имеет решений. В этом случае необходимо использовать метод Гаусса.\n\nЕсли главный определитель не равен нулю - система имеет только одно решение. Чтобы найти корни уравнений, необходимо вычислить еще два определителя:</string>
+
+    <string name="det1_lb">"det1="</string>
+    <string name="det1">"  9  4 \n  7  2 "</string>
+    <string name="det1_sol">="9*2 - 7*4 = -10"</string>
+
+    <string name="det2_lb">"det2="</string>
+    <string name="det2">"  5  9 \n  3  7 "</string>
+    <string name="det2_sol">"=5*7 - 9*3 = 8"</string>
+
+    <string name="theory3">"Корни уравнения можно найти по формулам:"</string>
+
+    <!-- Calculation of result-->
+    <string name="var1">"Y = "</string>
+    <string name="var1_calc_up">det2</string>
+    <string name="var1_calc_down">det</string>
+    <string name="equal">" = "</string>
+    <string name="var1_calc_up_val">8</string>
+    <string name="var1_calc_down_val">-2</string>
+    <string name="var1_val">" = -4"</string>
+
+    <string name="var2">"X = "</string>
+    <string name="var2_calc_up">det1</string>
+    <string name="var2_calc_down">det</string>
+    <string name="var2_calc_up_val">-10</string>
+    <string name="var2_calc_down_val">-2</string>
+    <string name="var2_val">" = 5"</string>
+
+    <string name="theory_end">Системы уравнений с большим числом переменных решаются по тому же принципу</string>
+
+    <!-- Main Activity end-->
+
+    <!-- Solution_x2_Activity -->
+
+    <string name="X1_plus">X<sub><small>1</small></sub>+</string>
+    <string name="X2_equal">X<sub><small>2</small></sub>=</string>
+
+    <string name="X1_equal">X<sub><small>1</small></sub>=</string>
+
+    <string name="sys2_det1_lb_up">det<sub><small>1</small></sub></string>
+    <string name="sys2_det2_lb_up">det<sub><small>2</small></sub></string>
+
+    <string name="det_equal">det=</string>
+    <string name="det1_equal">det<sub><small>1</small></sub>=</string>
+    <string name="det2_equal">det<sub><small>2</small></sub>=</string>
+
+    <!-- Solution_x2_Activity end -->
+
+    <!-- Solution_x3_Activity -->
+    <string name="X2_plus">X<sub><small>2</small></sub>+</string>
+    <string name="X3_equal">X<sub><small>3</small></sub>=</string>
+    <string name="det3_equal">det<sub><small>3</small></sub>=</string>
+    <string name="sys3_det1_lb_up">det<sub><small>1</small></sub></string>
+    <string name="sys3_det2_lb_up">det<sub><small>2</small></sub></string>
+    <string name="sys3_det3_lb_up">det<sub><small>3</small></sub></string>
+    <!-- Solution_x3_Activity end-->
+
+    <!-- Solution_x4_Activity -->
+    <string name="X3_plus">X<sub><small>3</small></sub>+</string>
+    <string name="X4_equal">X<sub><small>4</small></sub>=</string>
+    <string name="det4_equal">det<sub><small>4</small></sub>=</string>
+    <string name="sys4_det1_lb_up">det<sub><small>1</small></sub></string>
+    <string name="sys4_det2_lb_up">det<sub><small>2</small></sub></string>
+    <string name="sys4_det3_lb_up">det<sub><small>3</small></sub></string>
+    <string name="sys4_det4_lb_up">det<sub><small>4</small></sub></string>
+    <!-- Solution_x4_Activity end-->
+
+    <!-- Solution_x5_Activity -->
+    <string name="X4_plus">X<sub><small>4</small></sub>+</string>
+    <string name="X5_equal">X<sub><small>5</small></sub>=</string>
+    <string name="det5_equal">det<sub><small>5</small></sub>=</string>
+    <string name="sys5_det1_lb_up">det<sub><small>1</small></sub></string>
+    <string name="sys5_det2_lb_up">det<sub><small>2</small></sub></string>
+    <string name="sys5_det3_lb_up">det<sub><small>3</small></sub></string>
+    <string name="sys5_det4_lb_up">det<sub><small>4</small></sub></string>
+    <string name="sys5_det5_lb_up">det<sub><small>5</small></sub></string>
+    <!-- Solution_x5_Activity end-->
+
+    <!-- Solution_x6_Activity -->
+    <string name="X5_plus">X<sub><small>5</small></sub>+</string>
+    <string name="X6_equal">X<sub><small>6</small></sub>=</string>
+    <string name="det6_equal">det<sub><small>6</small></sub>=</string>
+    <string name="sys6_det1_lb_up">det<sub><small>1</small></sub></string>
+    <string name="sys6_det2_lb_up">det<sub><small>2</small></sub></string>
+    <string name="sys6_det3_lb_up">det<sub><small>3</small></sub></string>
+    <string name="sys6_det4_lb_up">det<sub><small>4</small></sub></string>
+    <string name="sys6_det5_lb_up">det<sub><small>5</small></sub></string>
+    <string name="sys6_det6_lb_up">det<sub><small>6</small></sub></string>
+    <!-- Solution_x6_Activity end-->
+
+
+    <!-- General phrases -->
+    <string name="title_text">Введите значения переменных:</string>
+    <string name="btn_fill">Заполнить поля случайными значениями</string>
+    <string name="btn_calc">Решить систему</string>
+    <string name="solution_title">Решение:</string>
+    <string name="det_lb">det</string>
+    <string name="scope_sign">{</string>
+    <string name="semicolon">;</string>
+    <string name="equal_sign">=</string>
+    <string name="not_have_solution">Система имеет бесконечно много\nрешений или несовместна\n(не имеет решений).\nВ этом случае правило Крамера не\nпоможет, нам нужно использовать\nметод Гаусса.</string>
+    <string name="error_empty">Введите данные</string>
+    <string name="error_invalid">Некорректные данные</string>
+
+    <!-- AdMob ad unit IDs -->
+    <string name="sys_eq_ad">ca-app-pub-8202213558316777/6890114449</string>
+    <string name="sys_eq_full_screen">ca-app-pub-8202213558316777/9843580849</string>
+    <!-- AdMob test unit IDs-->
+    <string name="sys_eq_ad_test">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="sys_eq_full_screen_test">ca-app-pub-3940256099942544/1033173712</string>
+
+</resources>

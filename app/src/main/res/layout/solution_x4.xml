@@ -1,0 +1,2023 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sys4_scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <HorizontalScrollView
+        android:id="@+id/sys4_hscroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/sys4_main_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/acivity_paddind">
+
+
+            <!-- Back button -->
+
+            <ImageButton
+                android:id="@+id/sys4_btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/ic_btn_back"
+                android:onClick="back" />
+
+            <!-- Title text -->
+
+            <TextView
+                android:id="@+id/sys4_title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/sys4_btn_back"
+                android:text="@string/title_text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/title_txt_size" />
+
+            <!-- Scope view sign-->
+
+            <ImageView
+                android:id="@+id/sys4_scope_view"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/sys4_gl_inputs"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/sys4_btn_back"
+                android:background="@drawable/scope_line" />
+
+            <GridLayout
+                android:id="@+id/sys4_gl_inputs"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/sys4_title_text"
+                android:layout_toRightOf="@+id/sys4_scope_view"
+                android:columnCount="9"
+                android:rowCount="4">
+
+                <!-- First equation -->
+
+                <EditText
+                    android:id="@+id/sys4_eq_1_var_1"
+                    android:layout_width="@dimen/eq_4_cell_width"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:inputType="phone"
+                    android:digits="-1234567890." />
+
+                <TextView
+                    android:id="@+id/sys4_eq1_x1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/cell_padding"
+                    android:text="@string/X1_plus"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sys4_input_text_size" />
+
+                <EditText
+                    android:id="@+id/sys4_eq_1_var_2"
+                    android:layout_width="@dimen/eq_4_cell_width"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:inputType="phone"
+                    android:digits="-1234567890." />
+
+                <TextView
+                    android:id="@+id/sys4_eq1_x2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/cell_padding"
+                    android:text="@string/X2_plus"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sys4_input_text_size" />
+
+                <EditText
+                    android:id="@+id/sys4_eq_1_var_3"
+                    android:layout_width="@dimen/eq_4_cell_width"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:inputType="phone"
+                    android:digits="-1234567890." />
+
+                <TextView
+                    android:id="@+id/sys4_eq1_x3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/cell_padding"
+                    android:text="@string/X3_plus"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sys4_input_text_size" />
+
+                <EditText
+                    android:id="@+id/sys4_eq_1_var_4"
+                    android:layout_width="@dimen/eq_4_cell_width"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:inputType="phone"
+                    android:digits="-1234567890." />
+
+                <TextView
+                    android:id="@+id/sys4_eq1_x4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/cell_padding"
+                    android:text="@string/X4_equal"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sys4_input_text_size" />
+
+                <EditText
+                    android:id="@+id/sys4_eq_1_var_5"
+                    android:layout_width="@dimen/eq_4_cell_width"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:inputType="phone"
+                    android:digits="-1234567890." />
+
+                <!-- Second equation -->
+
+                <EditText
+                    android:id="@+id/sys4_eq_2_var_1"
+                    android:layout_width="@dimen/eq_4_cell_width"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:inputType="phone"
+                    android:digits="-1234567890." />
+
+                <TextView
+                    android:id="@+id/sys4_eq2_x1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/cell_padding"
+                    android:text="@string/X1_plus"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sys4_input_text_size" />
+
+                <EditText
+                    android:id="@+id/sys4_eq_2_var_2"
+                    android:layout_width="@dimen/eq_4_cell_width"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:inputType="phone"
+                    android:digits="-1234567890." />
+
+                <TextView
+                    android:id="@+id/sys4_eq2_x2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/cell_padding"
+                    android:text="@string/X2_plus"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sys4_input_text_size" />
+
+                <EditText
+                    android:id="@+id/sys4_eq_2_var_3"
+                    android:layout_width="@dimen/eq_4_cell_width"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:inputType="phone"
+                    android:digits="-1234567890." />
+
+                <TextView
+                    android:id="@+id/sys4_eq2_x3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/cell_padding"
+                    android:text="@string/X3_plus"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sys4_input_text_size" />
+
+                <EditText
+                    android:id="@+id/sys4_eq_2_var_4"
+                    android:layout_width="@dimen/eq_4_cell_width"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:inputType="phone"
+                    android:digits="-1234567890." />
+
+                <TextView
+                    android:id="@+id/sys4_eq2_x4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/cell_padding"
+                    android:text="@string/X4_equal"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sys4_input_text_size" />
+
+                <EditText
+                    android:id="@+id/sys4_eq_2_var_5"
+                    android:layout_width="@dimen/eq_4_cell_width"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:inputType="phone"
+                    android:digits="-1234567890." />
+
+                <!-- Third equation -->
+
+                <EditText
+                    android:id="@+id/sys4_eq_3_var_1"
+                    android:layout_width="@dimen/eq_4_cell_width"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:inputType="phone"
+                    android:digits="-1234567890." />
+
+                <TextView
+                    android:id="@+id/sys4_eq3_x1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/cell_padding"
+                    android:text="@string/X1_plus"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sys4_input_text_size" />
+
+                <EditText
+                    android:id="@+id/sys4_eq_3_var_2"
+                    android:layout_width="@dimen/eq_4_cell_width"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:inputType="phone"
+                    android:digits="-1234567890." />
+
+                <TextView
+                    android:id="@+id/sys4_eq3_x2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/cell_padding"
+                    android:text="@string/X2_plus"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sys4_input_text_size" />
+
+                <EditText
+                    android:id="@+id/sys4_eq_3_var_3"
+                    android:layout_width="@dimen/eq_4_cell_width"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:inputType="phone"
+                    android:digits="-1234567890." />
+
+                <TextView
+                    android:id="@+id/sys4_eq3_x3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/cell_padding"
+                    android:text="@string/X3_plus"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sys4_input_text_size" />
+
+                <EditText
+                    android:id="@+id/sys4_eq_3_var_4"
+                    android:layout_width="@dimen/eq_4_cell_width"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:inputType="phone"
+                    android:digits="-1234567890." />
+
+                <TextView
+                    android:id="@+id/sys4_eq3_x4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/cell_padding"
+                    android:text="@string/X4_equal"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sys4_input_text_size" />
+
+                <EditText
+                    android:id="@+id/sys4_eq_3_var5"
+                    android:layout_width="@dimen/eq_4_cell_width"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:inputType="phone"
+                    android:digits="-1234567890." />
+
+                <!-- Fourth equation -->
+
+                <EditText
+                    android:id="@+id/sys4_eq_4_var_1"
+                    android:layout_width="@dimen/eq_4_cell_width"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:inputType="phone"
+                    android:digits="-1234567890." />
+
+                <TextView
+                    android:id="@+id/sys4_eq4_x1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/cell_padding"
+                    android:text="@string/X1_plus"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sys4_input_text_size" />
+
+                <EditText
+                    android:id="@+id/sys4_eq_4_var_2"
+                    android:layout_width="@dimen/eq_4_cell_width"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:inputType="phone"
+                    android:digits="-1234567890." />
+
+                <TextView
+                    android:id="@+id/sys4_eq4_x2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/cell_padding"
+                    android:text="@string/X2_plus"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sys4_input_text_size" />
+
+                <EditText
+                    android:id="@+id/sys4_eq_4_var_3"
+                    android:layout_width="@dimen/eq_4_cell_width"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:inputType="phone"
+                    android:digits="-1234567890." />
+
+                <TextView
+                    android:id="@+id/sys4_eq4_x3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/cell_padding"
+                    android:text="@string/X3_plus"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sys4_input_text_size" />
+
+                <EditText
+                    android:id="@+id/sys4_eq_4_var_4"
+                    android:layout_width="@dimen/eq_4_cell_width"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:inputType="phone"
+                    android:digits="-1234567890." />
+
+                <TextView
+                    android:id="@+id/sys4_eq4_x4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/cell_padding"
+                    android:text="@string/X4_equal"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sys4_input_text_size" />
+
+                <EditText
+                    android:id="@+id/sys4_eq_4_var5"
+                    android:layout_width="@dimen/eq_4_cell_width"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:inputType="phone"
+                    android:digits="-1234567890." />
+
+            </GridLayout>
+
+            <LinearLayout
+                android:id="@+id/sys4_btn_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sys4_gl_inputs"
+                android:layout_toEndOf="@+id/sys4_btn_back"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/sys4_btn_fill"
+                    android:layout_width="@dimen/btn_fill_width"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/cell_padding"
+                    android:layout_marginRight="@dimen/cell_padding"
+                    android:background="@drawable/round_btn"
+                    android:onClick="sys4_fill"
+                    android:text="@string/btn_fill"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/sys4_txt_size" />
+
+                <Button
+                    android:id="@+id/sys4_btn_calc"
+                    android:layout_width="@dimen/btn_calc_width"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/cell_padding"
+                    android:background="@drawable/round_btn"
+                    android:onClick="calculate"
+                    android:text="@string/btn_calc"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/sys4_txt_size" />
+
+                <com.google.android.gms.ads.AdView
+                    android:id="@+id/adView_x4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/sys3_btn_lay"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="@string/sys_eq_ad">
+                </com.google.android.gms.ads.AdView>
+
+            </LinearLayout>
+            <!-- View to hide (Invisible part of screen)-->
+
+            <LinearLayout
+                android:id="@+id/sys4_full_solution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/sys4_btn_lay"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/sys4_v_lay_det"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/sys4_sol_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/solution_title"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sys4_txt_size" />
+
+                    <!-- Theory label - calculation formula-->
+
+                    <!-- Determinant formulas container -->
+
+                    <LinearLayout
+                        android:id="@+id/sys4_h_lay_det1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <!-- Variable 1 determinant -->
+                        <TextView
+                            android:id="@+id/sys4_var1_lb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/cell_padding"
+                            android:paddingBottom="@dimen/cell_padding"
+                            android:text="@string/X1_equal"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/black" />
+
+                        <LinearLayout
+                            android:id="@+id/sys4_v_lay_det1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/cell_padding">
+
+                            <TextView
+                                android:id="@+id/sys4_det_lb_up"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:paddingBottom="@dimen/cell_padding"
+                                android:text="@string/sys4_det1_lb_up"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/black" />
+
+                            <View
+                                android:id="@+id/sys4_var1_hor_line"
+                                android:layout_width="40dp"
+                                android:layout_height="3dp"
+                                android:background="@color/black"
+                                android:paddingBottom="@dimen/cell_padding" />
+
+                            <TextView
+                                android:id="@+id/var1_lb_down"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:text="@string/det_lb"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/sys4_var1_semicol1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/cell_padding"
+                            android:paddingBottom="@dimen/cell_padding"
+                            android:text="@string/semicolon"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/black" />
+
+                        <!-- Variable 1 determinant end -->
+
+                        <!-- Variable 2 determinant -->
+                        <TextView
+                            android:id="@+id/sys4_var2_lb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/cell_padding"
+                            android:paddingBottom="@dimen/cell_padding"
+                            android:text="@string/X2_equal"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/black" />
+
+                        <LinearLayout
+                            android:id="@+id/sys4_v_lay_det2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/cell_padding">
+
+                            <TextView
+                                android:id="@+id/sys4_det2_lb_up"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:paddingBottom="@dimen/cell_padding"
+                                android:text="@string/sys4_det2_lb_up"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/black" />
+
+                            <View
+                                android:id="@+id/sys4_var2_hor_line"
+                                android:layout_width="40dp"
+                                android:layout_height="3dp"
+                                android:background="@color/black"
+                                android:paddingBottom="@dimen/cell_padding" />
+
+                            <TextView
+                                android:id="@+id/var2_lb_down"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:text="@string/det_lb"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/sys4_var1_semicol2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/cell_padding"
+                            android:paddingBottom="@dimen/cell_padding"
+                            android:text="@string/semicolon"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/black" />
+
+                        <!-- Variable 2 determinant end -->
+
+                        <!-- Variable 3 determinant -->
+                        <TextView
+                            android:id="@+id/sys4_var3_lb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/cell_padding"
+                            android:paddingBottom="@dimen/cell_padding"
+                            android:text="@string/X3_equal"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/black" />
+
+                        <LinearLayout
+                            android:id="@+id/sys4_v_lay_det3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/cell_padding">
+
+                            <TextView
+                                android:id="@+id/sys4_det3_lb_up"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:paddingBottom="@dimen/cell_padding"
+                                android:text="@string/sys4_det3_lb_up"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/black" />
+
+                            <View
+                                android:id="@+id/sys4_var3_hor_line"
+                                android:layout_width="40dp"
+                                android:layout_height="3dp"
+                                android:background="@color/black"
+                                android:paddingBottom="@dimen/cell_padding" />
+
+                            <TextView
+                                android:id="@+id/var3_lb_down"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:text="@string/det_lb"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/sys4_var1_semicol3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/cell_padding"
+                            android:paddingBottom="@dimen/cell_padding"
+                            android:text="@string/semicolon"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/black" />
+
+                        <!-- Variable 3 determinant end -->
+
+                        <!-- Variable 4 determinant -->
+                        <TextView
+                            android:id="@+id/sys4_var4_lb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/cell_padding"
+                            android:paddingBottom="@dimen/cell_padding"
+                            android:text="@string/X4_equal"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/black" />
+
+                        <LinearLayout
+                            android:id="@+id/sys4_v_lay_det4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/cell_padding">
+
+                            <TextView
+                                android:id="@+id/sys4_det4_lb_up"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:paddingBottom="@dimen/cell_padding"
+                                android:text="@string/sys4_det4_lb_up"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/black" />
+
+                            <View
+                                android:id="@+id/sys4_var4_hor_line"
+                                android:layout_width="40dp"
+                                android:layout_height="3dp"
+                                android:background="@color/black"
+                                android:paddingBottom="@dimen/cell_padding" />
+
+                            <TextView
+                                android:id="@+id/var4_lb_down"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:text="@string/det_lb"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/sys4_var1_semicol4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/cell_padding"
+                            android:paddingBottom="@dimen/cell_padding"
+                            android:text="@string/semicolon"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/black" />
+
+                        <!-- Variable 4 determinant end -->
+
+                    </LinearLayout>
+
+                    <!-- Determinant formulas container end -->
+
+                    <!-- Main det calculation -->
+
+                    <LinearLayout
+                        android:id="@+id/sys4_h_lay_det_calc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/sys4_determinant_margin"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/sys4_det_calc_lb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/cell_padding"
+                            android:text="@string/det_equal"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/black" />
+
+                        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/sys4_gl_det"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/determinant_line"
+                            android:columnCount="4"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/cell_padding2"
+                            android:rowCount="4">
+
+                            <EditText
+                                android:id="@+id/sys4_det_num1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det_num2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det_num3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det_num4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det_num5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det_num6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det_num7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det_num8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det_num9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det_num10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det_num11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det_num12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det_num13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det_num14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det_num15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det_num16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                        </GridLayout>
+
+                        <TextView
+                            android:id="@+id/sys4_det_calc_eq_before"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/cell_padding"
+                            android:text="@string/equal_sign"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Show if system does not have solution -->
+                <TextView
+                    android:id="@+id/sys4_not_solutable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/cell_padding"
+                    android:text="@string/not_have_solution"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+                <!-- Show if system does not have solution end-->
+
+                <!-- Detailed solution - det1 det2 det3-->
+                <LinearLayout
+                    android:id="@+id/sys4_v_lay_det1_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <!-- det1 calculation -->
+
+                    <LinearLayout
+                        android:id="@+id/sys4_h_lay_det1_calc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/sys4_determinant_margin"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/sys4_det1_calc_lb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/cell_padding"
+                            android:paddingBottom="@dimen/cell_padding"
+                            android:text="@string/det1_equal"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/black" />
+
+                        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/sys4_gl_det1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/determinant_line"
+                            android:columnCount="4"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/cell_padding2"
+                            android:rowCount="4">
+
+                            <EditText
+                                android:id="@+id/sys4_det1_num1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det1_num2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det1_num3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det1_num4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det1_num5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det1_num6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det1_num7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det1_num8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det1_num9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det1_num10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det1_num11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det1_num12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det1_num13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det1_num14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det1_num15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det1_num16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                        </GridLayout>
+
+                        <TextView
+                            android:id="@+id/sys4_det1_calc_eq_before"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/cell_padding"
+                            android:paddingBottom="@dimen/cell_padding"
+                            android:text="@string/equal_sign"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <!-- det1 calculation end -->
+
+                    <!-- det2 calculation -->
+
+                    <LinearLayout
+                        android:id="@+id/sys4_h_lay_det2_calc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/sys4_determinant_margin"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/sys4_det2_calc_lb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/cell_padding"
+                            android:paddingBottom="@dimen/cell_padding"
+                            android:text="@string/det2_equal"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/black" />
+
+                        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/sys4_gl_det2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/determinant_line"
+                            android:columnCount="4"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/cell_padding2"
+                            android:rowCount="4">
+
+                            <EditText
+                                android:id="@+id/sys4_det2_num1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det2_num2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det2_num3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det2_num4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det2_num5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det2_num6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det2_num7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det2_num8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det2_num9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det2_num10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det2_num11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det2_num12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det2_num13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det2_num14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det2_num15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det2_num16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                        </GridLayout>
+
+                        <TextView
+                            android:id="@+id/sys4_det2_calc_eq_before"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/cell_padding"
+                            android:paddingBottom="@dimen/cell_padding"
+                            android:text="@string/equal_sign"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <!-- det2 calculation end -->
+
+                    <!-- det3 calculation -->
+
+                    <LinearLayout
+                        android:id="@+id/sys4_h_lay_det3_calc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/sys4_determinant_margin"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/sys4_det3_calc_lb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/cell_padding"
+                            android:paddingBottom="@dimen/cell_padding"
+                            android:text="@string/det3_equal"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/black" />
+
+                        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/sys4_gl_det3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/determinant_line"
+                            android:columnCount="4"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/cell_padding2"
+                            android:rowCount="4">
+
+                            <EditText
+                                android:id="@+id/sys4_det3_num1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det3_num2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det3_num3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det3_num4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det3_num5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det3_num6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det3_num7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det3_num8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det3_num9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det3_num10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det3_num11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det3_num12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det3_num13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det3_num14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det3_num15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det3_num16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                        </GridLayout>
+
+                        <TextView
+                            android:id="@+id/sys4_det3_calc_eq_before"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/cell_padding"
+                            android:paddingBottom="@dimen/cell_padding"
+                            android:text="@string/equal_sign"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <!-- det3 calculation end -->
+
+                    <!-- det4 calculation -->
+
+                    <LinearLayout
+                        android:id="@+id/sys4_h_lay_det4_calc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/sys4_determinant_margin"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/sys4_det4_calc_lb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/cell_padding"
+                            android:paddingBottom="@dimen/cell_padding"
+                            android:text="@string/det4_equal"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/black" />
+
+                        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/sys4_gl_det4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/determinant_line"
+                            android:columnCount="4"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/cell_padding2"
+                            android:rowCount="4">
+
+                            <EditText
+                                android:id="@+id/sys4_det4_num1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det4_num2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det4_num3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det4_num4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det4_num5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det4_num6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det4_num7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det4_num8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det4_num9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det4_num10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det4_num11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det4_num12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det4_num13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det4_num14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det4_num15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/sys4_det4_num16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/cell_margin"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1" />
+
+                        </GridLayout>
+
+                        <TextView
+                            android:id="@+id/sys4_det4_calc_eq_before"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/cell_padding"
+                            android:paddingBottom="@dimen/cell_padding"
+                            android:text="@string/equal_sign"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <!-- det4 calculation end -->
+
+                </LinearLayout>
+                <!-- Detailed solution end - det1 det2 det3-->
+
+                <!-- Full solution layout -->
+            </LinearLayout>
+
+            <!-- Determinant formulas container (variable value)-->
+            <LinearLayout
+                android:id="@+id/sys4_var_final_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/sys4_full_solution"
+                android:layout_margin="@dimen/cell_margin"
+                android:visibility="gone">
+                <!-- Variable 1 determinant -->
+
+                <LinearLayout
+                    android:id="@+id/sys4_h_lay_det1_values"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/sys4_det1_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/cell_padding"
+                        android:paddingBottom="@dimen/cell_padding"
+                        android:text="@string/X1_equal"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:id="@+id/sys4_v_lay_det1_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/sys4_det_val_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/black" />
+
+                        <View
+                            android:id="@+id/sys4_var1_hor_line_val"
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:layout_marginBottom="@dimen/cell_padding2"
+                            android:background="@color/black" />
+
+                        <TextView
+                            android:id="@+id/sys4_det1_val_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/sys4_var1_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/cell_padding"
+                        android:paddingBottom="@dimen/cell_padding"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+                <!-- Variable 1 determinant end -->
+
+                <!-- Variable 2 determinant -->
+                <LinearLayout
+                    android:id="@+id/sys4_h_lay_det2_values"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/sys4_det2_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/cell_padding"
+                        android:paddingBottom="@dimen/cell_padding"
+                        android:text="@string/X2_equal"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:id="@+id/sys4_v_lay_det2_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/sys4_det2_lb_up_val"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/black" />
+
+                        <View
+                            android:id="@+id/sys4_var2_hor_line_val"
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:layout_marginBottom="@dimen/cell_padding2"
+                            android:background="@color/black" />
+
+                        <TextView
+                            android:id="@+id/sys4_det2_val_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/sys4_var2_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/cell_padding"
+                        android:paddingBottom="@dimen/cell_padding"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+                <!-- Variable 2 determinant end -->
+
+                <!-- Variable 3 determinant -->
+                <LinearLayout
+                    android:id="@+id/sys4_h_lay_det3_values"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/sys4_det3_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/cell_padding"
+                        android:paddingBottom="@dimen/cell_padding"
+                        android:text="@string/X3_equal"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:id="@+id/sys4_v_lay_det3_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/sys4_det3_lb_up_val"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/black" />
+
+                        <View
+                            android:id="@+id/sys4_var3_hor_line_val"
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:layout_marginBottom="@dimen/cell_padding2"
+                            android:background="@color/black" />
+
+                        <TextView
+                            android:id="@+id/sys4_det3_val_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/sys4_var3_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/cell_padding"
+                        android:paddingBottom="@dimen/cell_padding"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+                <!-- Variable 3 determinant end -->
+
+                <!-- Variable 4 determinant -->
+                <LinearLayout
+                    android:id="@+id/sys4_h_lay_det4_values"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/sys4_det4_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/cell_padding"
+                        android:paddingBottom="@dimen/cell_padding"
+                        android:text="@string/X4_equal"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:id="@+id/sys4_v_lay_det4_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/sys4_det4_lb_up_val"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/black" />
+
+                        <View
+                            android:id="@+id/sys4_var4_hor_line_val"
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:layout_marginBottom="@dimen/cell_padding2"
+                            android:background="@color/black" />
+
+                        <TextView
+                            android:id="@+id/sys4_det4_val_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/sys4_var4_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/cell_padding"
+                        android:paddingBottom="@dimen/cell_padding"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+                <!-- Variable 4 determinant end -->
+
+            </LinearLayout>
+            <!-- Determinant formulas container end(variable value)-->
+
+        </RelativeLayout>
+
+    </HorizontalScrollView>
+
+</ScrollView>

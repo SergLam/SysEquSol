@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/imageView"
+        android:layout_alignBottom="@+id/rateAppImg"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/rateAppImg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        ads:srcCompat="@android:drawable/btn_star_big_on"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/btn_close"
+        android:onClick="rate_app"/>
+
+    <ImageButton
+        android:id="@+id/btn_close"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/ic_btn_close"
+        android:onClick="close_app"/>
+
+</RelativeLayout>

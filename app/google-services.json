@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "651705708516",
+    "firebase_url": "https://system-of-equations-solver.firebaseio.com",
+    "project_id": "system-of-equations-solver",
+    "storage_bucket": "system-of-equations-solver.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:651705708516:android:ef4a7716773bc84f",
+        "android_client_info": {
+          "package_name": "com.samurai.sysequsol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "651705708516-p96j05rhl2ijpi179oum403ku4fergpv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuDroCYf03DUFYuQ2agi19k6gdAapAYrk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

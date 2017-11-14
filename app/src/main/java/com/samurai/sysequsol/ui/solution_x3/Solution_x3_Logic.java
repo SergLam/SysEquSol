@@ -239,6 +239,7 @@ public class Solution_x3_Logic {
         StringBuilder sb = new StringBuilder();
         for (int j = 0; j < s; j++) {
             sb.append(gm.dts(arr[0][j]) + "*" + gm.dts(arr[1][j + 1]) + "*" + gm.dts(arr[2][j + 2]) + "+");
+            sb.append("\n");
         }
         sb.setCharAt(sb.length() - 1, '-');
         String p_sum = sb.toString();
@@ -247,6 +248,7 @@ public class Solution_x3_Logic {
         // Move by columns
         for (int j = size - 1; j > 1; j--) {
             sb.append(gm.dts(arr[0][j]) + "*" + gm.dts(arr[1][j - 1]) + "*" + gm.dts(arr[2][j - 2]) + "-");
+            sb.append("\n");
         }
         String n_sum = sb.toString();
         n_sum = n_sum.substring(0, n_sum.length() - 1);

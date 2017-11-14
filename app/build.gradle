@@ -2,13 +2,13 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.0"
+    buildToolsVersion '26.0.2'
     defaultConfig {
         applicationId "com.samurai.sysequsol"
         minSdkVersion 17
         targetSdkVersion 25
-        versionCode 10
-        versionName "4.6"
+        versionCode 11
+        versionName "4.7"
         setProperty("archivesBaseName", "Sys_Equ_Solver")
     }
     buildTypes {

@@ -29,6 +29,15 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/buttonLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_title"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
     <Button
         android:text="2x2"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
@@ -37,11 +46,9 @@
         android:id="@+id/btn_2x2"
         android:background="@drawable/round_btn"
         android:layout_marginTop="24dp"
-        android:layout_below="@+id/main_title"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginLeft="57dp"
-        android:layout_marginStart="57dp"
+        android:layout_margin="10dp"
         android:onClick="x2_solution"/>
 
     <Button
@@ -50,12 +57,9 @@
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_below="@+id/btn_2x2"
-        android:layout_alignLeft="@+id/btn_2x2"
-        android:layout_alignStart="@+id/btn_2x2"
         android:id="@+id/btn_3x3"
         android:background="@drawable/round_btn"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_margin="10dp"
         android:onClick="x3_solution"/>
 
     <Button
@@ -65,12 +69,10 @@
         android:layout_height="50dp"
         android:id="@+id/btn_4x4"
         android:background="@drawable/round_btn"
+        android:layout_toEndOf="@id/btn_2x2"
         android:layout_alignBaseline="@+id/btn_2x2"
         android:layout_alignBottom="@+id/btn_2x2"
-        android:layout_alignRight="@+id/main_title"
-        android:layout_alignEnd="@+id/main_title"
-        android:layout_marginRight="51dp"
-        android:layout_marginEnd="51dp"
+        android:layout_margin="10dp"
         android:onClick="x4_solution"/>
 
     <Button
@@ -79,35 +81,36 @@
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_below="@+id/btn_4x4"
-        android:layout_alignRight="@+id/btn_4x4"
-        android:layout_alignEnd="@+id/btn_4x4"
+        android:layout_toEndOf="@id/btn_3x3"
+        android:layout_alignBaseline="@+id/btn_3x3"
+        android:layout_alignBottom="@+id/btn_3x3"
         android:id="@+id/btn_5x5"
         android:background="@drawable/round_btn"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_margin="10dp"
         android:onClick="x5_solution"/>
 
     <Button
         android:text="6x6"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-        android:layout_width="100dp"
+        android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_below="@+id/btn_5x5"
         android:id="@+id/btn_6x6"
         android:background="@drawable/round_btn"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_alignLeft="@+id/btn_3x3"
+        android:layout_margin="10dp"
+
         android:layout_alignStart="@+id/btn_3x3"
-        android:onClick="x6_solution"
-        android:layout_alignEnd="@+id/btn_5x5" />
+        android:onClick="x6_solution" />
+
+        </RelativeLayout>
+
     <TextView
         android:text="@string/main_faq_vis"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
         android:textAlignment="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btn_6x6"
+        android:layout_below="@+id/buttonLay"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="14dp"
         android:id="@+id/theory_lb"

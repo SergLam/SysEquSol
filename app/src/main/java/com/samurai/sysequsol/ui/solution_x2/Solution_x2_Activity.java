@@ -3,28 +3,23 @@ package com.samurai.sysequsol.ui.solution_x2;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
-import android.text.InputFilter;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.GridLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
 import com.mobfox.sdk.bannerads.Banner;
 import com.mobfox.sdk.bannerads.BannerListener;
 import com.samurai.sysequsol.R;
+import com.samurai.sysequsol.ui.General_Methods;
 
 import java.text.DecimalFormat;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-
-import com.samurai.sysequsol.ui.General_Methods;
 
 /**
  * Created by Sergey on 24.04.2017.

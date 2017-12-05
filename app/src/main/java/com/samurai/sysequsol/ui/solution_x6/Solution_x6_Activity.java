@@ -3,17 +3,13 @@ package com.samurai.sysequsol.ui.solution_x6;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
-import android.text.InputFilter;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.GridLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
 import com.mobfox.sdk.bannerads.Banner;
 import com.mobfox.sdk.bannerads.BannerListener;
 import com.samurai.sysequsol.R;
@@ -163,22 +159,27 @@ public class Solution_x6_Activity extends Activity {
             public void onBannerError(View banner, Exception e) {
 //                Toast.makeText(self, e.getMessage(), Toast.LENGTH_SHORT).show();
             }
+
             @Override
             public void onBannerLoaded(View banner) {
 //                Toast.makeText(self, "loaded", Toast.LENGTH_SHORT).show();
             }
+
             @Override
             public void onBannerClosed(View banner) {
 //                Toast.makeText(self, "closed", Toast.LENGTH_SHORT).show();
             }
+
             @Override
             public void onBannerFinished() {
 //                Toast.makeText(self, "finished", Toast.LENGTH_SHORT).show();
             }
+
             @Override
             public void onBannerClicked(View banner) {
 //                Toast.makeText(self, "clicked", Toast.LENGTH_SHORT).show();
             }
+
             @Override
             public void onNoFill(View banner) {
 //                Toast.makeText(self, "no fill", Toast.LENGTH_SHORT).show();
@@ -208,11 +209,11 @@ public class Solution_x6_Activity extends Activity {
     }
 
     @Override
-    protected void onStart(){
+    protected void onStart() {
         super.onStart();
         // Set input filters for edittext
         int count = sys6_gl_inputs.getChildCount();
-        for (int k = 0;k<count; k++) {
+        for (int k = 0; k < count; k++) {
             View v = sys6_gl_inputs.getChildAt(k);
             if (v instanceof EditText) {
                 EditText e = (EditText) v;
@@ -250,7 +251,7 @@ public class Solution_x6_Activity extends Activity {
     @OnClick(R.id.sys6_btn_calc)
     public void calculate(View view) {
         Context con = getApplicationContext();
-        if (!gm.input_is_empty(sys6_gl_inputs,con)) {
+        if (!gm.input_is_empty(sys6_gl_inputs, con)) {
             // Get input data
             Solution_x6_Logic obj = new Solution_x6_Logic(gm.get_input_data(sys6_gl_inputs, 6, 7));
             // Set values main det
@@ -261,7 +262,7 @@ public class Solution_x6_Activity extends Activity {
             // Check if no view has focus:
             View vieww = this.getCurrentFocus();
             if (vieww != null) {
-                InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+                InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
                 imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
             }
 

@@ -4,7 +4,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:mobfox="http://schemas.android.com/apk/lib/com.mobfox.sdk"
     android:id="@+id/scrollView">
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -118,15 +118,14 @@
 
     <!-- Views to show / hide -->
 
-    <com.google.android.gms.ads.AdView
+    <com.mobfox.sdk.bannerads.Banner
+        android:layout_height="50dp"
+        android:layout_width="320dp"
+        mobfox:enableLocation="true"
         android:id="@+id/adView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/theory_lb"
-        ads:adSize="BANNER"
-        ads:adUnitId="@string/sys_eq_ad">
-    </com.google.android.gms.ads.AdView>
+        android:layout_below="@id/theory_lb"
+        android:layout_centerHorizontal="true">
+    </com.mobfox.sdk.bannerads.Banner>
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"

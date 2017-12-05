@@ -125,4 +125,8 @@
     <string name="sys_eq_ad_test">ca-app-pub-3940256099942544/6300978111</string>
     <string name="sys_eq_full_screen_test">ca-app-pub-3940256099942544/1033173712</string>
 
+    <!-- MobFox test banner hash -->
+    <string name="mobfox_test">fe96717d9875b9da4339ea5367eff1ec</string>
+    <string name="mobfox_prod">19884746ab232d11c2e6b16c1394d4c5</string>
+
 </resources>

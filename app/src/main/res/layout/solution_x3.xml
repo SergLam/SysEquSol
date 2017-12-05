@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:mobfox="http://schemas.android.com/apk/lib/com.mobfox.sdk"
     android:id="@+id/sys3_scroll"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
@@ -284,15 +284,14 @@
 
             </LinearLayout>
 
-            <com.google.android.gms.ads.AdView
+            <com.mobfox.sdk.bannerads.Banner
+                android:layout_height="50dp"
+                android:layout_width="320dp"
+                mobfox:enableLocation="true"
                 android:id="@+id/adView_x3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_below="@+id/sys3_btn_lay"
-                ads:adSize="BANNER"
-                ads:adUnitId="@string/sys_eq_ad">
-            </com.google.android.gms.ads.AdView>
+                android:layout_below="@id/sys3_btn_lay"
+                android:layout_centerHorizontal="true">
+            </com.mobfox.sdk.bannerads.Banner>
             <!-- View to hide (Invisible part of screen)-->
 
             <LinearLayout

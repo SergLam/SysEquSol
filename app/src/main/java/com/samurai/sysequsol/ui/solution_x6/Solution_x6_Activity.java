@@ -10,9 +10,12 @@ import android.widget.EditText;
 import android.widget.GridLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.mobfox.sdk.bannerads.Banner;
+import com.mobfox.sdk.bannerads.BannerListener;
 import com.samurai.sysequsol.R;
 import com.samurai.sysequsol.ui.General_Methods;
 
@@ -142,18 +145,66 @@ public class Solution_x6_Activity extends Activity {
     @BindView(R.id.sys6_var6_value)
     TextView sys6_var6_value;
 
-    private AdView mAdView;
     private General_Methods gm = new General_Methods();
+    Banner banner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.solution_x6);
         ButterKnife.bind(this);
+
         // Uncoment before publishing
-        mAdView = (AdView) findViewById(R.id.adView_x6);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
+        banner = (Banner) findViewById(R.id.adView_x6);
+
+        final Activity self = this;
+        banner.setListener(new BannerListener() {
+            @Override
+            public void onBannerError(View banner, Exception e) {
+//                Toast.makeText(self, e.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+            @Override
+            public void onBannerLoaded(View banner) {
+//                Toast.makeText(self, "loaded", Toast.LENGTH_SHORT).show();
+            }
+            @Override
+            public void onBannerClosed(View banner) {
+//                Toast.makeText(self, "closed", Toast.LENGTH_SHORT).show();
+            }
+            @Override
+            public void onBannerFinished() {
+//                Toast.makeText(self, "finished", Toast.LENGTH_SHORT).show();
+            }
+            @Override
+            public void onBannerClicked(View banner) {
+//                Toast.makeText(self, "clicked", Toast.LENGTH_SHORT).show();
+            }
+            @Override
+            public void onNoFill(View banner) {
+//                Toast.makeText(self, "no fill", Toast.LENGTH_SHORT).show();
+            }
+        });
+        banner.setInventoryHash(getResources().getString(R.string.mobfox_prod));
+        banner.load();
+    }
+
+    //permission dialog for marshmello and above
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        banner.onRequestPermissionsResult(requestCode, permissions, grantResults);
+    }
+
+    //add this so video ads will work properly
+    @Override
+    protected void onPause() {
+        super.onPause();
+        banner.onPause();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        banner.onResume();
     }
 
     @Override

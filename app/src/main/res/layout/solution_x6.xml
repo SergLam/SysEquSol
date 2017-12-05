@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:mobfox="http://schemas.android.com/apk/lib/com.mobfox.sdk"
     android:id="@+id/sys6_scroll"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
@@ -774,17 +774,17 @@
                     android:textAllCaps="false"
                     android:textSize="@dimen/sys6_txt_size" />
 
-                <com.google.android.gms.ads.AdView
-                    android:id="@+id/adView_x6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_below="@+id/sys3_btn_lay"
-                    ads:adSize="BANNER"
-                    ads:adUnitId="@string/sys_eq_ad">
-                </com.google.android.gms.ads.AdView>
-
             </LinearLayout>
+
+            <com.mobfox.sdk.bannerads.Banner
+                android:layout_height="50dp"
+                android:layout_width="320dp"
+                mobfox:enableLocation="true"
+                android:id="@+id/adView_x6"
+                android:layout_below="@+id/sys6_btn_lay"
+                android:layout_alignParentStart="true">
+            </com.mobfox.sdk.bannerads.Banner>
+
             <!-- View to hide (Invisible part of screen)-->
 
             <LinearLayout
@@ -792,8 +792,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/sys6_btn_lay"
-                android:gravity="center"
+                android:layout_below="@+id/adView_x6"
+                android:gravity="start"
                 android:orientation="vertical"
                 android:visibility="gone">
 
@@ -801,14 +801,14 @@
                     android:id="@+id/sys6_v_lay_det"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
+                    android:gravity="start"
                     android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/sys6_sol_title"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
+                        android:layout_gravity="start"
                         android:text="@string/solution_title"
                         android:textColor="@color/black"
                         android:textSize="@dimen/sys6_txt_size" />

@@ -1,5 +1,6 @@
 package com.samurai.sysequsol.ui;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.ActionBar;
@@ -9,10 +10,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
+import com.mobfox.sdk.bannerads.Banner;
+import com.mobfox.sdk.bannerads.BannerListener;
 import com.samurai.sysequsol.R;
 import com.samurai.sysequsol.ui.solution_x2.Solution_x2_Activity;
 import com.samurai.sysequsol.ui.solution_x3.Solution_x3_Activity;
@@ -43,9 +47,8 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.main_act_hide_lay)
     RelativeLayout main_act_hide_lay;
 
-
     private General_Methods gm = new General_Methods();
-    private AdView mAdView;
+    Banner banner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,12 +57,59 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setCustomView(R.layout.action_bar);
         setContentView(R.layout.activity_main);
 
-        // Uncoment before publishing
-        mAdView = (AdView) findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
-
         ButterKnife.bind(this);
+
+        // Uncoment before publishing
+        banner = (Banner) findViewById(R.id.adView);
+
+        final Activity self = this;
+        banner.setListener(new BannerListener() {
+            @Override
+            public void onBannerError(View banner, Exception e) {
+//                Toast.makeText(self, e.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+            @Override
+            public void onBannerLoaded(View banner) {
+//                Toast.makeText(self, "loaded", Toast.LENGTH_SHORT).show();
+            }
+            @Override
+            public void onBannerClosed(View banner) {
+//                Toast.makeText(self, "closed", Toast.LENGTH_SHORT).show();
+            }
+            @Override
+            public void onBannerFinished() {
+//                Toast.makeText(self, "finished", Toast.LENGTH_SHORT).show();
+            }
+            @Override
+            public void onBannerClicked(View banner) {
+//                Toast.makeText(self, "clicked", Toast.LENGTH_SHORT).show();
+            }
+            @Override
+            public void onNoFill(View banner) {
+//                Toast.makeText(self, "no fill", Toast.LENGTH_SHORT).show();
+            }
+        });
+        banner.setInventoryHash(getResources().getString(R.string.mobfox_prod));
+        banner.load();
+    }
+
+    //permission dialog for marshmello and above
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        banner.onRequestPermissionsResult(requestCode, permissions, grantResults);
+    }
+
+    //add this so video ads will work properly
+    @Override
+    protected void onPause() {
+        super.onPause();
+        banner.onPause();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        banner.onResume();
     }
 
     @OnClick(R.id.btn_close)

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Main Activity -->
-    <string name="app_name">" Рішення систем\n рівнянь"</string>
+    <string name="app_name">Рішення систем\nрівнянь</string>
     <string name="main_text">Виберіть розмір системи:\n(Кількість змінних в рівняннях)</string>
     <string name="main_faq_vis">Показати теоретичний материал\n(метод Крамера)</string>
     <string name="main_faq_hide">Сховати теоретичний материал\n(метод Крамера)</string>
@@ -114,7 +114,7 @@
     <string name="scope_sign">{</string>
     <string name="semicolon">;</string>
     <string name="equal_sign">=</string>
-    <string name="not_have_solution">Система має нескінченно багато\nрішень або несумісна (не має рішень).\nУ цьому випадку правило Крамера\nне допоможе, нам потрібно\nвикористовувати метод Гаусса.</string>
+    <string name="not_have_solution">Система має нескінченно багато рішень або несумісна (не має рішень).\nУ цьому випадку правило Крамера не допоможе, нам потрібно використовувати метод Гаусса.</string>
     <string name="error_empty">Введіть дані</string>
     <string name="error_invalid">Некоректні дані</string>
 

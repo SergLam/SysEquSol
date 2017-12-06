@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <!-- Main Activity -->
-    <string name="app_name">Soluzione di sistemi\ndi equazioni</string>
-    <string name="main_text">Selezionare il formato del sistema\n(Numero di variabili nelle equazioni)</string>
-    <string name="main_faq_vis">Mostrare il materiale teorico\n(la regola di Cramer)</string>
-    <string name="main_faq_hide">Nascondere il materiale teorico\n(la regola di Cramer)</string>
+    <string name="app_name">समीकरणों की व्यवस्था\nका समाधान</string>
+    <string name="main_text">सिस्टम का आकार चुनें:\n(समीकरणों में चर की संख्या)</string>
+    <string name="main_faq_vis">सैद्धांतिक सामग्री दिखाएं\n(क्रेमर की विधि)</string>
+    <string name="main_faq_hide">सैद्धांतिक सामग्री छुपाएं\n(क्रेमर की विधि)</string>
 
     <!-- Theoretical strings -->
-    <string name="theory1">La regola di Cramer è una formula esplicita per risolvere un sistema di equazioni lineari con lo stesso numero di equazioni come per lignoto, ogni volta proprio che il sistema ha una soluzione unica. Esso esprime la soluzione in termini di determinanti (quadrato) della matrice dei coefficienti e delle matrice, derivati ottenuti, e sostituisce una colonna dal vettore sui lati destro di equazioni.\n\nUn esempio della sistema di equazioni:</string>
-    <string name="step1">In primo luogo, è necessario calcolare il determinante principale del sistema:</string>
+    <string name="theory1">क्रैमर का नियम अज्ञात के लिए समान समीकरणों के साथ रैखिक समीकरणों की एक प्रणाली को सुलझाने के लिए एक स्पष्ट फार्मूला है, हर बार जब सिस्टम में एक अनूठा समाधान होता है तो मान्य है। यह समीकरणों के दाहिने हाथों के वेक्टर द्वारा एक कॉलम की जगह, गुणांक के मैट्रिक्स के निर्धारकों (वर्ग) के संदर्भ में समाधान को अभिव्यक्त करता है और इसके द्वारा प्राप्त मैट्रिक्स को दर्शाता है।\n\nसमीकरणों की एक प्रणाली को हल करने का उदाहरण:</string>
+    <string name="step1">पहले आपको सिस्टम के मुख्य निर्धारक की गणना करने की आवश्यकता है:</string>
 
     <string name="src_det_lb">det=</string>
     <string name="src_det">"  5  4 \n  3  2 "</string>
     <string name="src_det_solution">"= 5*2 - 3*4 = -2"</string>
 
-    <string name="theory2">Se il determinante principale è zero, allora il sistema ha infinito di soluzioni o non ha soluzioni. In questo caso, è necessario utilizzare la regola di Gauss.\n\nSe il principale determinante non è zero, allora il sistema ha una sola soluzione. Per trovare le radici di equazioni, è necessario calcolare altri due determinante:</string>
+    <string name="theory2">यदि प्रमुख निर्धारक शून्य है, तो सिस्टम में असीम रूप से कई समाधान होते हैं या समाधान नहीं होते हैं इस मामले में गॉस पद्धति का उपयोग करना आवश्यक है।\n\nयदि प्रमुख निर्धारक शून्य नहीं है, तो सिस्टम में केवल एक ही समाधान है। समीकरणों की जड़ों को खोजने के लिए, दो और निर्धारकों की गणना करना आवश्यक है:</string>
 
     <string name="det1_lb">"det1="</string>
     <string name="det1">"  9  4 \n  7  2 "</string>
@@ -25,7 +24,7 @@
     <string name="det2">"  5  9 \n  3  7 "</string>
     <string name="det2_sol">"=5*7 - 9*3 = 8"</string>
 
-    <string name="theory3">"Le radici dell'equazione possono essere trovati dalle formule:"</string>
+    <string name="theory3">समीकरण की जड़ें सूत्रों द्वारा पाई जा सकती हैं:</string>
 
     <!-- Calculation of result-->
     <string name="var1">"Y = "</string>
@@ -43,7 +42,7 @@
     <string name="var2_calc_down_val">-2</string>
     <string name="var2_val">" = 5"</string>
 
-    <string name="theory_end">I sistemi di equazioni con un gran numero di variabili sono risolti nello stesso modo.</string>
+    <string name="theory_end">बड़ी संख्या में चर के साथ समीकरणों की प्रणालियों को उसी सिद्धांत से हल किया जाता है</string>
 
     <!-- Main Activity end-->
 
@@ -107,17 +106,17 @@
 
 
     <!-- General phrases -->
-    <string name="title_text">Inserire i valori delle variabili:</string>
-    <string name="btn_fill">Compilare i campi con valori casuali</string>
-    <string name="btn_calc">Risolvere il sistema</string>
-    <string name="solution_title">La decisione:</string>
+    <string name="title_text">चर के मान दर्ज करें:</string>
+    <string name="btn_fill">यादृच्छिक मूल्यों के साथ फ़ील्ड जनसंख्या</string>
+    <string name="btn_calc">सिस्टम को हल करें</string>
+    <string name="solution_title">समाधान:</string>
     <string name="det_lb">det</string>
     <string name="scope_sign">{</string>
     <string name="semicolon">;</string>
     <string name="equal_sign">=</string>
-    <string name="not_have_solution">Il sistema ha infinite soluzioni o è incoerenti (non ha soluzioni).\nIn questo caso, la regola di Cramer non funziona, abbiamo bisogno di usare la regola di Gauss.</string>
-    <string name="error_empty">Inserire i dati</string>
-    <string name="error_invalid">Dati non validi</string>
+    <string name="not_have_solution">सिस्टम में असीम रूप से कई समाधान होते हैं या असंगत होते हैं (कोई समाधान नहीं होता है)\nइस मामले में, क्रैमर नियम मदद नहीं करता है, हमें गॉस पद्धति का उपयोग करने की आवश्यकता है।</string>
+    <string name="error_empty">डेटा दर्ज करें</string>
+    <string name="error_invalid">गलत डेटा</string>
 
     <!-- AdMob ad unit IDs -->
     <string name="sys_eq_ad">ca-app-pub-8202213558316777/6890114449</string>
@@ -125,4 +124,5 @@
     <!-- AdMob test unit IDs-->
     <string name="sys_eq_ad_test">ca-app-pub-3940256099942544/6300978111</string>
     <string name="sys_eq_full_screen_test">ca-app-pub-3940256099942544/1033173712</string>
+
 </resources>

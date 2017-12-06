@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Main Activity -->
-    <string name="app_name">" Die Lösung von\n Gleichungssystemen"</string>
+    <string name="app_name">Die Lösung von\nGleichungssystemen</string>
     <string name="main_text">Wählen Sie die Größe des Systems:\n(Die Anzahl von Variablen in den Gleichungen)</string>
     <string name="main_faq_vis">Zeigen theoretisches Material\n(die Cramer Methode)</string>
     <string name="main_faq_hide">Verstecken theoretisches Material\n(die Cramer Methode)</string>
@@ -113,7 +113,7 @@
     <string name="scope_sign">{</string>
     <string name="semicolon">;</string>
     <string name="equal_sign">=</string>
-    <string name="not_have_solution">Das System hat unendlich viele\nLösungen oder ist inkonsistent\n(hat keine Lösungen).\nIn diesem Fall wird die Cramer Methode\nnicht funktioniert, müssen\nwir Gauß Methode verwenden.</string>
+    <string name="not_have_solution">Das System hat unendlich viele Lösungen oder ist inkonsistent (hat keine Lösungen).\nIn diesem Fall wird die Cramer Methode nicht funktioniert, müssen wir Gauß Methode verwenden.</string>
     <string name="error_empty">Eingeben die daten</string>
     <string name="error_invalid">Ungültige Daten</string>
 

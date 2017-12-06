@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <!-- Main Activity -->
-    <string name="app_name">Soluzione di sistemi\ndi equazioni</string>
-    <string name="main_text">Selezionare il formato del sistema\n(Numero di variabili nelle equazioni)</string>
-    <string name="main_faq_vis">Mostrare il materiale teorico\n(la regola di Cramer)</string>
-    <string name="main_faq_hide">Nascondere il materiale teorico\n(la regola di Cramer)</string>
+    <string name="app_name">Solução de sistemas\nde equações</string>
+    <string name="main_text">Selecione o tamanho do sistema:\n(Número de variáveis nas equações)</string>
+    <string name="main_faq_vis">Mostrar material teórico\n(método de Cramer)</string>
+    <string name="main_faq_hide">Ocultar material teórico\n(método de Cramer)</string>
 
     <!-- Theoretical strings -->
-    <string name="theory1">La regola di Cramer è una formula esplicita per risolvere un sistema di equazioni lineari con lo stesso numero di equazioni come per lignoto, ogni volta proprio che il sistema ha una soluzione unica. Esso esprime la soluzione in termini di determinanti (quadrato) della matrice dei coefficienti e delle matrice, derivati ottenuti, e sostituisce una colonna dal vettore sui lati destro di equazioni.\n\nUn esempio della sistema di equazioni:</string>
-    <string name="step1">In primo luogo, è necessario calcolare il determinante principale del sistema:</string>
+    <string name="theory1">A regra de Cramer é uma fórmula explícita para resolver um sistema de equações lineares com o mesmo número de equações que para incógnitas, válidas sempre que o sistema possui uma solução única. Ele expressa a solução em termos dos determinantes (quadrados) da matriz de coeficientes e matrizes derivadas dele, substituindo uma coluna pelo vetor dos lados direito das equações.\n\nExemplo de resolução de um sistema de equações:</string>
+    <string name="step1">Primeiro você precisa calcular o determinante principal do sistema:</string>
 
     <string name="src_det_lb">det=</string>
     <string name="src_det">"  5  4 \n  3  2 "</string>
     <string name="src_det_solution">"= 5*2 - 3*4 = -2"</string>
 
-    <string name="theory2">Se il determinante principale è zero, allora il sistema ha infinito di soluzioni o non ha soluzioni. In questo caso, è necessario utilizzare la regola di Gauss.\n\nSe il principale determinante non è zero, allora il sistema ha una sola soluzione. Per trovare le radici di equazioni, è necessario calcolare altri due determinante:</string>
+    <string name="theory2">Se o determinante principal for zero, então o sistema tem infinitamente muitas soluções ou não possui soluções. Neste caso, é necessário usar o método Gauss.\n\nSe o determinante principal for zero, então o sistema tem infinitamente muitas soluções ou não possui soluções. Neste caso, é necessário usar o método Gauss.</string>
 
     <string name="det1_lb">"det1="</string>
     <string name="det1">"  9  4 \n  7  2 "</string>
@@ -25,7 +24,7 @@
     <string name="det2">"  5  9 \n  3  7 "</string>
     <string name="det2_sol">"=5*7 - 9*3 = 8"</string>
 
-    <string name="theory3">"Le radici dell'equazione possono essere trovati dalle formule:"</string>
+    <string name="theory3">As raízes da equação podem ser encontradas pelas fórmulas:</string>
 
     <!-- Calculation of result-->
     <string name="var1">"Y = "</string>
@@ -43,7 +42,7 @@
     <string name="var2_calc_down_val">-2</string>
     <string name="var2_val">" = 5"</string>
 
-    <string name="theory_end">I sistemi di equazioni con un gran numero di variabili sono risolti nello stesso modo.</string>
+    <string name="theory_end">Os sistemas de equações com um grande número de variáveis são resolvidos pelo mesmo princípio</string>
 
     <!-- Main Activity end-->
 
@@ -107,17 +106,17 @@
 
 
     <!-- General phrases -->
-    <string name="title_text">Inserire i valori delle variabili:</string>
-    <string name="btn_fill">Compilare i campi con valori casuali</string>
-    <string name="btn_calc">Risolvere il sistema</string>
-    <string name="solution_title">La decisione:</string>
+    <string name="title_text">Digite os valores para as variáveis:</string>
+    <string name="btn_fill">Preencha campos com valores aleatórios</string>
+    <string name="btn_calc">Resolva o sistema</string>
+    <string name="solution_title">Solução:</string>
     <string name="det_lb">det</string>
     <string name="scope_sign">{</string>
     <string name="semicolon">;</string>
     <string name="equal_sign">=</string>
-    <string name="not_have_solution">Il sistema ha infinite soluzioni o è incoerenti (non ha soluzioni).\nIn questo caso, la regola di Cramer non funziona, abbiamo bisogno di usare la regola di Gauss.</string>
-    <string name="error_empty">Inserire i dati</string>
-    <string name="error_invalid">Dati non validi</string>
+    <string name="not_have_solution">O sistema possui inúmeras soluções ou é inconsistente (não possui soluções).\nNeste caso, a regra de Cramer não ajuda, precisamos usar o método de Gauss.</string>
+    <string name="error_empty">Insira os dados</string>
+    <string name="error_invalid">Dados incorretos</string>
 
     <!-- AdMob ad unit IDs -->
     <string name="sys_eq_ad">ca-app-pub-8202213558316777/6890114449</string>
@@ -125,4 +124,5 @@
     <!-- AdMob test unit IDs-->
     <string name="sys_eq_ad_test">ca-app-pub-3940256099942544/6300978111</string>
     <string name="sys_eq_full_screen_test">ca-app-pub-3940256099942544/1033173712</string>
+
 </resources>

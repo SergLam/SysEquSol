@@ -114,7 +114,7 @@
     <string name="scope_sign">{</string>
     <string name="semicolon">;</string>
     <string name="equal_sign">=</string>
-    <string name="not_have_solution">The system has infinitely many solutions or is inconsistent (has no solutions). When the Cramer rule does not help, we need to use the Gauss method.</string>
+    <string name="not_have_solution">The system has infinitely many solutions or is inconsistent (has no solutions).\nWhen the Cramer rule does not help, we need to use the Gauss method.</string>
     <string name="error_empty">Enter data</string>
     <string name="error_invalid">Invalid data</string>
 

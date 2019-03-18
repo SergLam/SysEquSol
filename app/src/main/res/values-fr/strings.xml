@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Main Activity -->
-    <string name="app_name">Solution de systèmes\nd'équations</string>
-    <string name="main_text">Choisissez la taille du système:\n(Le nombre de variables dans les équations)</string>
+    <string name="app_name">Solution de systèmes\nd\'équations</string>
+    <string name="main_text">"Choisissez la taille du système:\n(Le nombre de variables dans les équations)"</string>
     <string name="main_faq_vis">Montrer le matériel théorique\n(La méthode de Cramer)</string>
     <string name="main_faq_hide">Cacher le matériel théorique\n(La méthode de Cramer)</string>
 
     <!-- Theoretical strings -->
-    <string name="theory1">La règle de Cramer est une formule explicite pour résoudre un système d\'équations linéaires avec le même nombre d\'équations que pour les inconnues, valable chaque fois que le système a une solution unique. Il exprime la solution en termes de déterminants (carrés) de la matrice de coefficients et de matrices qui en dérivent, en remplaçant une colonne par le vecteur des côtés droits des équations.\n\nExemple de résolution d'un système d'équations:</string>
+    <string name="theory1">"La règle de Cramer est une formule explicite pour résoudre un système d\'équations linéaires avec le même nombre d\'équations que pour les inconnues, valable chaque fois que le système a une solution unique. Il exprime la solution en termes de déterminants (carrés) de la matrice de coefficients et de matrices qui en dérivent, en remplaçant une colonne par le vecteur des côtés droits des équations.\n\nExemple de résolution d'un système d'équations:"</string>
     <string name="step1"> Сначала необходимо вычислить главный определитель системы:</string>
 
     <string name="src_det_lb">det=</string>
     <string name="src_det">"  5  4 \n  3  2 "</string>
     <string name="src_det_solution">"= 5*2 - 3*4 = -2"</string>
 
-    <string name="theory2">Si le déterminant principal est zéro, alors le système a une infinité de solutions ou n\'a pas de solution du tout. Dans ce cas, il est nécessaire d\'utiliser la méthode de Gauss.\n\nSi le déterminant principal n'est pas nul, le système n'a qu'une seule solution. Pour trouver les racines des équations, il est nécessaire de calculer deux autres déterminants:</string>
+    <string name="theory2">"Si le déterminant principal est zéro, alors le système a une infinité de solutions ou n\'a pas de solution du tout. Dans ce cas, il est nécessaire d\'utiliser la méthode de Gauss.\n\nSi le déterminant principal n'est pas nul, le système n'a qu'une seule solution. Pour trouver les racines des équations, il est nécessaire de calculer deux autres déterminants:"</string>
 
     <string name="det1_lb">"det1="</string>
     <string name="det1">"  9  4 \n  7  2 "</string>
@@ -114,9 +114,9 @@
     <string name="scope_sign">{</string>
     <string name="semicolon">;</string>
     <string name="equal_sign">=</string>
-    <string name="not_have_solution">Le système a une infinité de solutions ou est incohérent (n\'a pas de solutions).\nDans ce cas, la règle de Cramer n'aide pas, nous devons utiliser la méthode de Gauss.</string>
-    <string name="error_empty">Введите данные</string>
-    <string name="error_invalid">Некорректные данные</string>
+    <string name="not_have_solution">"Le système a une infinité de solutions ou est incohérent (n\'a pas de solutions).\nDans ce cas, la règle de Cramer n'aide pas, nous devons utiliser la méthode de Gauss."</string>
+    <string name="error_empty">"Entrer des données"</string>
+    <string name="error_invalid">"Données incorrectes"</string>
 
     <!-- AdMob ad unit IDs -->
     <string name="sys_eq_ad">ca-app-pub-8202213558316777/6890114449</string>

@@ -3,12 +3,12 @@ package com.samurai.sysequsol.ui;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.samurai.sysequsol.R;
 import com.samurai.sysequsol.ui.solution_x2.Solution_x2_Activity;
@@ -45,10 +45,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-        getSupportActionBar().setCustomView(R.layout.action_bar);
-        setContentView(R.layout.activity_main);
 
+//        if (getSupportActionBar() != null) {
+//            getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+//            getSupportActionBar().setCustomView(R.layout.action_bar);
+//        }
+        setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
     }
 

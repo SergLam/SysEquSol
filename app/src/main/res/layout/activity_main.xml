@@ -2,498 +2,484 @@
 
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    xmlns:mobfox="http://schemas.android.com/apk/lib/com.mobfox.sdk"
-    android:id="@+id/scrollView">
+    android:layout_height="fill_parent">
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.samurai.sysequsol.ui.MainActivity">
-
-
-    <TextView
-        android:text="@string/main_text"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/main_title"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/buttonLay"
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/main_title"
-        android:layout_centerHorizontal="true"
-        android:gravity="center">
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.samurai.sysequsol.ui.MainActivity">
 
-    <Button
-        android:text="2x2"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:id="@+id/btn_2x2"
-        android:background="@drawable/round_btn"
-        android:layout_marginTop="24dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_margin="10dp"
-        android:onClick="x2_solution"/>
 
-    <Button
-        android:text="3x3"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_below="@+id/btn_2x2"
-        android:id="@+id/btn_3x3"
-        android:background="@drawable/round_btn"
-        android:layout_margin="10dp"
-        android:onClick="x3_solution"/>
+        <TextView
+            android:id="@+id/main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/main_text"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
-    <Button
-        android:text="4x4"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:id="@+id/btn_4x4"
-        android:background="@drawable/round_btn"
-        android:layout_toEndOf="@id/btn_2x2"
-        android:layout_alignBaseline="@+id/btn_2x2"
-        android:layout_alignBottom="@+id/btn_2x2"
-        android:layout_margin="10dp"
-        android:onClick="x4_solution"/>
+        <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/buttonLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_title"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
 
-    <Button
-        android:text="5x5"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_below="@+id/btn_4x4"
-        android:layout_toEndOf="@id/btn_3x3"
-        android:layout_alignBaseline="@+id/btn_3x3"
-        android:layout_alignBottom="@+id/btn_3x3"
-        android:id="@+id/btn_5x5"
-        android:background="@drawable/round_btn"
-        android:layout_margin="10dp"
-        android:onClick="x5_solution"/>
+            <Button
+                android:id="@+id/btn_2x2"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/round_btn"
+                android:onClick="x2_solution"
+                android:text="2x2"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
-    <Button
-        android:text="6x6"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_below="@+id/btn_5x5"
-        android:id="@+id/btn_6x6"
-        android:background="@drawable/round_btn"
-        android:layout_margin="10dp"
+            <Button
+                android:id="@+id/btn_3x3"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/btn_2x2"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_btn"
+                android:onClick="x3_solution"
+                android:text="3x3"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
-        android:layout_alignStart="@+id/btn_3x3"
-        android:onClick="x6_solution" />
+            <Button
+                android:id="@+id/btn_4x4"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_alignBaseline="@+id/btn_2x2"
+                android:layout_alignBottom="@+id/btn_2x2"
+                android:layout_margin="10dp"
+                android:layout_toEndOf="@id/btn_2x2"
+                android:background="@drawable/round_btn"
+                android:onClick="x4_solution"
+                android:text="4x4"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            <Button
+                android:id="@+id/btn_5x5"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/btn_4x4"
+                android:layout_alignBaseline="@+id/btn_3x3"
+                android:layout_alignBottom="@+id/btn_3x3"
+                android:layout_margin="10dp"
+                android:layout_toEndOf="@id/btn_3x3"
+                android:background="@drawable/round_btn"
+                android:onClick="x5_solution"
+                android:text="5x5"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            <Button
+                android:id="@+id/btn_6x6"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/btn_5x5"
+                android:layout_alignStart="@+id/btn_3x3"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_btn"
+                android:onClick="x6_solution"
+
+                android:text="6x6"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
         </RelativeLayout>
 
-    <TextView
-        android:text="@string/main_faq_vis"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-        android:textAlignment="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/buttonLay"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="14dp"
-        android:id="@+id/theory_lb"
-        android:onClick="show_theory"/>
-
-    <!-- Views to show / hide -->
-
-    <com.mobfox.sdk.bannerads.Banner
-        android:layout_height="50dp"
-        android:layout_width="320dp"
-        mobfox:enableLocation="true"
-        android:id="@+id/adView"
-        android:layout_below="@id/theory_lb"
-        android:layout_centerHorizontal="true">
-    </com.mobfox.sdk.bannerads.Banner>
-
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/main_act_hide_lay"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/adView"
-        android:layout_centerHorizontal="true"
-        android:visibility="gone">
-
-    <TextView
-        android:text="@string/theory1"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:id="@+id/theory_Cramer"
-        android:gravity="left" />
-
-    <ImageView
-        android:layout_width="320dp"
-        android:layout_height="213dp"
-        android:layout_below="@+id/theory_Cramer"
-        android:id="@+id/source_sys"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/src_system"
-        android:scaleType="fitXY"/>
-
-    <TextView
-        android:text="@string/step1"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/source_sys"
-        android:id="@+id/step1"
-        android:gravity="left" />
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="70dp"
-        android:orientation="horizontal"
-        android:layout_below="@+id/step1"
-        android:gravity="center"
-        android:id="@+id/linear_theor_layout">
-
         <TextView
-            android:text="@string/src_det_lb"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/theory_lb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/th_main_det_lb"
-            android:gravity="left" />
+            android:layout_below="@+id/buttonLay"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:onClick="show_theory"
+            android:text="@string/main_faq_vis"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
-    <TextView
-        android:text="@string/src_det"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/th_main_det"
-        android:layout_toRightOf="@+id/th_main_det_lb"
-        android:background="@drawable/determinant_line"/>
+        <!-- Views to show / hide -->
 
-    <TextView
-        android:text="@string/src_det_solution"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/th_main_det"
-        android:id="@+id/th_main_det_sol" />
-
-    </LinearLayout>
-
-    <TextView
-        android:text="@string/theory2"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/linear_theor_layout"
-        android:id="@+id/step2" />
-
-    <!-- det1 -->
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="70dp"
-        android:orientation="horizontal"
-        android:layout_below="@+id/step2"
-        android:gravity="center"
-        android:id="@+id/lin_lay_det1">
-
-        <TextView
-            android:text="@string/det1_lb"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/th_det1_lb"
-            android:gravity="left" />
-
-        <TextView
-            android:text="@string/det1"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/th_det1_lb"
-            android:id="@+id/th_det1"
-            android:background="@drawable/determinant_line"/>
-
-        <TextView
-            android:text="@string/det1_sol"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/th_det1_sol" />
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="70dp"
-        android:orientation="horizontal"
-        android:layout_below="@+id/lin_lay_det1"
-        android:gravity="center"
-        android:id="@+id/lin_lay_det2">
-
-        <TextView
-            android:text="@string/det2_lb"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/th_det2_lb"
-            android:gravity="left" />
-
-        <TextView
-            android:text="@string/det2"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/th_det2_lb"
-            android:id="@+id/th_det2"
-            android:background="@drawable/determinant_line"/>
-
-        <TextView
-            android:text="@string/det2_sol"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/th_det2_sol" />
-
-    </LinearLayout>
-
-    <TextView
-        android:text="@string/theory3"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/lin_lay_det2"
-        android:id="@+id/step3" />
-
-    <!-- Insert calculation of variables-->
-
-    <!-- Calculation of first variable-->
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/step3"
-        android:orientation="horizontal"
-        android:layout_centerHorizontal="true"
-        android:gravity="center_vertical"
-        android:id="@+id/lin_lay_main_var1">
-
-        <TextView
-            android:id="@+id/var1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-            android:text="@string/var1"
-            android:textColor="@color/black" />
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
-        android:id="@+id/lin_lay_var1">
-
-        <TextView
-            android:id="@+id/var1_lb_up"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-            android:text="@string/var1_calc_up"
-            android:textColor="@color/black" />
-
-        <View
-            android:id="@+id/horizontal_line_0"
-            android:layout_height="3dp"
-            android:layout_width="40dp"
-            android:background="@color/black" />
-
-        <TextView
-            android:id="@+id/var1_lb_down"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-            android:text="@string/var1_calc_down"
-            android:textColor="@color/black" />
-
-    </LinearLayout>
-
-        <TextView
-            android:id="@+id/var1_equal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-            android:text="@string/equal"
-            android:textColor="@color/black" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:orientation="vertical"
-            android:id="@+id/lin_lay_var1_val">
+        <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/main_act_hide_lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/theory_lb"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone">
 
             <TextView
-                android:id="@+id/var1_lb_up_val"
+                android:id="@+id/theory_Cramer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-                android:text="@string/var1_calc_up_val"
-                android:textColor="@color/black" />
+                android:layout_alignParentTop="true"
+                android:gravity="start"
+                android:text="@string/theory1"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
 
-            <View
-                android:id="@+id/horizontal_line_1"
-                android:layout_height="3dp"
-                android:layout_width="40dp"
-                android:background="@color/black" />
+            <ImageView
+                android:id="@+id/source_sys"
+                android:layout_width="320dp"
+                android:layout_height="213dp"
+                android:layout_below="@+id/theory_Cramer"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/theory1"
+                android:scaleType="fitXY"
+                android:src="@drawable/src_system" />
 
             <TextView
-                android:id="@+id/var1_lb_down_val"
+                android:id="@+id/step1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-                android:text="@string/var1_calc_down_val"
-                android:textColor="@color/black" />
+                android:layout_below="@+id/source_sys"
+                android:gravity="start"
+                android:text="@string/step1"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
 
-        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linear_theor_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/step1"
+                android:gravity="center"
+                android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/var1_val"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-            android:text="@string/var1_val"
-            android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/th_main_det_lb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="@string/src_det_lb"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
-    </LinearLayout>
+                <TextView
+                    android:id="@+id/th_main_det"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/th_main_det_lb"
+                    android:background="@drawable/determinant_line"
+                    android:text="@string/src_det"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
-    <!-- Calculation of second variable-->
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/lin_lay_main_var1"
-        android:orientation="horizontal"
-        android:layout_centerHorizontal="true"
-        android:gravity="center_vertical"
-        android:id="@+id/lin_lay_main_var2">
+                <TextView
+                    android:id="@+id/th_main_det_sol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/th_main_det"
+                    android:text="@string/src_det_solution"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
-        <TextView
-            android:id="@+id/var2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-            android:text="@string/var2"
-            android:textColor="@color/black" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:orientation="vertical"
-            android:id="@+id/lin_lay_var2">
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/var2_lb_up"
+                android:id="@+id/step2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-                android:text="@string/var2_calc_up"
-                android:textColor="@color/black" />
+                android:layout_below="@+id/linear_theor_layout"
+                android:text="@string/theory2"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
 
-            <View
-                android:id="@+id/horizontal_line_2"
-                android:layout_height="3dp"
-                android:layout_width="40dp"
-                android:background="@color/black" />
+            <!-- det1 -->
+
+            <LinearLayout
+                android:id="@+id/lin_lay_det1"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/step2"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/th_det1_lb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="@string/det1_lb"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+                <TextView
+                    android:id="@+id/th_det1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/th_det1_lb"
+                    android:background="@drawable/determinant_line"
+                    android:text="@string/det1"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+                <TextView
+                    android:id="@+id/th_det1_sol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/det1_sol"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lin_lay_det2"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/lin_lay_det1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/th_det2_lb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="@string/det2_lb"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+                <TextView
+                    android:id="@+id/th_det2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/th_det2_lb"
+                    android:background="@drawable/determinant_line"
+                    android:text="@string/det2"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+                <TextView
+                    android:id="@+id/th_det2_sol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/det2_sol"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/var2_lb_down"
+                android:id="@+id/step3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-                android:text="@string/var2_calc_down"
-                android:textColor="@color/black"/>
+                android:layout_below="@+id/lin_lay_det2"
+                android:text="@string/theory3"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
 
-        </LinearLayout>
+            <!-- Insert calculation of variables-->
 
-        <TextView
-            android:id="@+id/var2_equal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-            android:text="@string/equal"
-            android:textColor="@color/black" />
+            <!-- Calculation of first variable-->
+            <LinearLayout
+                android:id="@+id/lin_lay_main_var1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/step3"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:orientation="vertical"
-            android:id="@+id/lin_lay_var2_val">
+                <TextView
+                    android:id="@+id/var1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/var1"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:id="@+id/lin_lay_var1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/var1_lb_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/var1_calc_up"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/black" />
+
+                    <View
+                        android:id="@+id/horizontal_line_0"
+                        android:layout_width="40dp"
+                        android:layout_height="3dp"
+                        android:background="@color/black" />
+
+                    <TextView
+                        android:id="@+id/var1_lb_down"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/var1_calc_down"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/var1_equal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/equal"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:id="@+id/lin_lay_var1_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/var1_lb_up_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/var1_calc_up_val"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/black" />
+
+                    <View
+                        android:id="@+id/horizontal_line_1"
+                        android:layout_width="40dp"
+                        android:layout_height="3dp"
+                        android:background="@color/black" />
+
+                    <TextView
+                        android:id="@+id/var1_lb_down_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/var1_calc_down_val"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/var1_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/var1_val"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <!-- Calculation of second variable-->
+            <LinearLayout
+                android:id="@+id/lin_lay_main_var2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lin_lay_main_var1"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/var2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/var2"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:id="@+id/lin_lay_var2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/var2_lb_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/var2_calc_up"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/black" />
+
+                    <View
+                        android:id="@+id/horizontal_line_2"
+                        android:layout_width="40dp"
+                        android:layout_height="3dp"
+                        android:background="@color/black" />
+
+                    <TextView
+                        android:id="@+id/var2_lb_down"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/var2_calc_down"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/var2_equal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/equal"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:id="@+id/lin_lay_var2_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/var2_lb_up_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/var2_calc_up_val"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/black" />
+
+                    <View
+                        android:id="@+id/horizontal_line_3"
+                        android:layout_width="40dp"
+                        android:layout_height="3dp"
+                        android:background="@color/black" />
+
+                    <TextView
+                        android:id="@+id/var2_lb_down_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/var2_calc_down_val"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/var2_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/var2_val"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/var2_lb_up_val"
+                android:id="@+id/theory_end"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-                android:text="@string/var2_calc_up_val"
-                android:textColor="@color/black" />
+                android:layout_below="@+id/lin_lay_main_var2"
+                android:text="@string/theory_end"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
 
-            <View
-                android:id="@+id/horizontal_line_3"
-                android:layout_height="3dp"
-                android:layout_width="40dp"
-                android:background="@color/black"
-                 />
+        </RelativeLayout>
 
-            <TextView
-                android:id="@+id/var2_lb_down_val"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-                android:text="@string/var2_calc_down_val"
-                android:textColor="@color/black" />
-
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/var2_val"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-            android:text="@string/var2_val"
-            android:textColor="@color/black" />
-
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/theory_end"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/lin_lay_main_var2"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-        android:text="@string/theory_end" />
-
-</RelativeLayout>
-
-</RelativeLayout>
+    </RelativeLayout>
 
 </ScrollView>
